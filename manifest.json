@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "sum for me",
+  "content_scripts": [
+    { 
+      "matches": ["http://*/*", "https://*/*"],
+      "js" : ["popup.js"]
+    }
+  ],
+  "description": "This extension summarizes an article and saves that summary.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "collapse2.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "content_security_policy" : "script-src 'self' https://cdn.blockspring.com https://code.jquery.com; object-src 'self'; data: blob: filesystem:; media-src mediastream: "
+}

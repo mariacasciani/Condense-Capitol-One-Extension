@@ -1,0 +1,27 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Condense</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://cdn.blockspring.com/blockspring.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class = "status">
+      <H2>Summary: </H2>
+      <div> 
+        Number of Sentences: <input type = "number" name = "sentences" id = "sentlength" min="1" max="10"> 
+        <div id ="summarize" align = "center">Summarize!</div>
+      </div> 
+      <p id = "summary"></p>
+      <div class = "past" align = "center">Archived</div>
+    </div>
+  </body>
+</html>
+
