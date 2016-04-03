@@ -7,6 +7,6 @@ To use:
 just download the .crx file. 
 Open extensions in your chrome browser. 
 Turn on developer mode. 
-press load unpacked extension and select the folder of unpacked files in my git hub, called unpacked. 
-chrome extensions will pack and load the extension. 
+Add all files besides this README.md and the COex.crx file to a new folder on your desktop. 
+go to the chrome web browser extensions page, and select load unpacked extension. 
 try it out!
